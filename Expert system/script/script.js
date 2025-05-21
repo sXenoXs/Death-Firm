@@ -543,6 +543,14 @@
             }
         });
 
+	// Enter Key
+        userNameInput.addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // prevent form submission or newline
+                confirmNameButton.click(); // simulate button click
+            }
+        });
+
         // Initial question rendering
         renderQuestion();
         // --- End of script ---//
