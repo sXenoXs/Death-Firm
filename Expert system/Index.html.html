@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RA 10591 Expert System</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.cdnfonts.com/css/alice-in-wonderland" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/death-note-font" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/cloister-black" rel="stylesheet" />
+</head>
+<body>
+  <header class="top-banner">Death Firm</header>
+
+  <div id="nameModal" class="modal">
+    <div class="modal-content">
+      <h2>Enter Your Name</h2>
+      <input type="text" id="userNameInput" placeholder="Your full name">
+      <button id="confirmNameButton">Confirm</button>
+    </div>
+  </div>
+
+  <section class="hero-section">
+    <h1 class="main-title">RA 10591 Expert <br />System</h1>
+    <p class="subtitle">The Comprehensive Firearms and <br />Ammunition Regulation Act</p>
+    <button class="start-button">Start</button>
+  </section>
+
+  <div class="container2" id="expertSystemContainer">
+        <div class="header2">
+        </div>
+
+        <div id="questionArea" class="content2">
+            <h2 id="questionText" class="question-text"></h2>
+            <div id="optionsContainer" class="options-container"></div>
+            <div id="historyContainer" class="history-container" style="display: none;">
+                <h3>Your Responses:</h3>
+                <ul id="historyList" class="history-list"></ul>
+            </div>
+        </div>
+
+        <div id="resultArea" class="result-container" style="display: none;">
+            <div id="resultBox" class="result-box">
+                <h2 id="resultTitle"></h2>
+                <p id="resultDescription"></p>
+            </div>
+            <div class="result-details">
+                <h3>Penalty:</h3>
+                <p id="resultPenalty"></p>
+                <h3>Legal Basis:</h3>
+                <p id="resultSection"></p>
+                <button id="toggleDetailsButton" class="toggle-details-button">Read More</button>
+                 <div id="detailsContent" class="details-content" style="display: none;"></div>
+            </div>
+            <div id="resultHistoryContainer" class="history-container">
+                 <h3>Your Responses:</h3>
+                <ul id="resultHistoryList" class="history-list"></ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+  <section class="info-intro">
+    <h2 class="info-heading">The first law <br /> informational tool.</h2>
+    <div class="info-icons">
+      <div class="info-item">
+        <img src="img/mask.png" alt="Mask Icon" />
+        <h3>Ownership and Possession of Firearms</h3>
+        <p>Lorem ipsum dolor sit amet. Morbi vel lorem vitae erat.</p>
+      </div>
+      <div class="info-item">
+        <img src="img/floppy.png" alt="Disk Icon" />
+        <h3>Registration and Licensing</h3>
+        <p>Lorem ipsum dolor sit amet. Morbi vel lorem vitae erat.</p>
+      </div>
+      <div class="info-item">
+        <img src="img/folder.png" alt="Folder Icon" />
+        <h3>Acquisition and Deposit</h3>
+        <p>Lorem ipsum dolor sit amet. Morbi vel lorem vitae erat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-to">
+    <h2 class="how-to-heading">Death Firm <br />How To Use It</h2>
+    <ol class="how-to-list">
+      <li>The humans whose name is written in this note that has a penalty shall be penalized according to RA 10591.</li>
+      <li>This note will not take effect to those who complied with all the articles of RA 10591.</li>
+      <li>The penalty consequences differs from the violated law. There will be no mercy.</li>
+    </ol>
+  </section>
+
+  <section class="act-summary">
+  <div class="act-box">
+    <div class="act-left">
+      <div class="act-title">
+        <h3>REPUBLIC ACT No. 10591</h3>
+        <p><strong>An act providing for a comprehensive law on firearms and ammunition and providing penalties for violations thereof</strong></p>
+      </div>
+
+      <div class="act-abstract">
+        <p class="abstract">Abstract---Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel lorem vitae erat tempus consequat. Cras nisl arcu, sollicitudin at ornare eu, facilisis quis massa. Sed viverra volutpat finibus. Fusce molestie non lorem eget eleifend. In ut enim at ligula iaculis interdum sit amet sit amet orci. Donec egestas ultrices dui in varius. Morbi laoreet ultrices libero. Vivamus bibendum rutrum nisi, sit amet porta enim ultrices condimentum. Phasellus accumsan quam quam, non volutpat risus tristique id. In vitae sollicitudin libero. Nam laoreet, magna sed accumsan luctus, ligula neque fermentum lectus, quis blandit ex mi ac augue. Duis id egestas tellus.</p>
+      </div>
+
+      <div class="act-button">
+        <button class="learn-more" onclick="window.open('https://lawphil.net/statutes/repacts/ra2013/ra_10591_2013.html', '_blank')">Learn More</button>
+      </div>
+    </div>
+
+    <div class="act-image">
+      <img src="img/handcuffs.png" alt="Handcuffs" />
+    </div>
+  </div>
+</section>
+
+  <section class="disclaimer-box">
+  <div class="disclaimer-text">
+    <h4>Disclaimer</h4>
+    <p4><em>This is an informational tool only and does not constitute legal advice. For accurate legal guidance, please consult with a qualified attorney.</em></p4>
+  </div>
+  <div class="disclaimer-image">
+    <img src="img/pin.png" alt="Pin Icon" />
+  </div>
+</section>
+
+  <footer class="footer">
+    <h2>Death Firm</h2>
+    <p>© 2025 death firm inc.</p>
+  </footer>
+
+<script src="script/script.js"></script>
+</body>
+</html>

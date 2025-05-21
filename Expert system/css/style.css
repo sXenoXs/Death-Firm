@@ -1,0 +1,573 @@
+Death Note Heart Attack Sound Effect:
+https://www.youtube.com/watch?v=6V7q41YqjKw
+
+Chips Sound Effect | Chips Eating Sound Effect | Chips ASMR:
+https://www.youtube.com/watch?v=iR9Sk31IOCk
+
+Death Note - Kira's Laugh (Original):
+https://www.youtube.com/watch?v=C65oaIHsdYM
+
+
+
+/* Font imports */
+@import url("https://fonts.cdnfonts.com/css/alice-in-wonderland");
+@import url("https://fonts.cdnfonts.com/css/death-note-font");
+@import url("https://fonts.cdnfonts.com/css/cloister-black");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alice in Wonderland", serif;
+  background-color: #202122;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Top banner */
+.top-banner {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  font-family: "Death Note Font", sans-serif;
+  background-color: #111;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #202122;
+  margin: 15% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: "Death Note Font", sans-serif;
+}
+
+#userNameInput {
+  width: 80%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #dfdad3;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#confirmNameButton {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Death Note Font", sans-serif;
+  font-size: 1rem;
+}
+
+.modal-content {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Transition for container */
+.container2 {
+  transition: all 0.3s ease;
+  margin: 2rem auto;
+}
+
+/* Hide the expert system container by default */
+#expertSystemContainer {
+  display: none;
+}
+
+/* Container */
+.container2 {
+  background-color: #161515;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 20 auto;
+}
+
+.header2 {
+  background-color: #161515; /* Dark Blue */
+  color: white;
+  padding: 1rem;
+}
+.header2 h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 0 0.25rem 0;
+}
+.header2 p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+.expert-system-title {
+  margin-top: 5rem;
+  text-align: center;
+  color: #051019;
+  font-family: "Cloister Black", sans-serif;
+  font-size: 64px;
+}
+
+.expert-system-title2 {
+  text-align: center;
+  color: #051019;
+  font-family: "Cloister Black", sans-serif;
+  font-size: 64px;
+}
+.regulation-act-title {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #112432;
+  font-family: "Death Note Font", sans-serif;
+  font-size: 28px;
+}
+.regulation-act-title2 {
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #112432;
+  font-family: "Death Note Font", sans-serif;
+  font-size: 28px;
+}
+.content2 {
+  padding: 1.5rem;
+}
+.question-text {
+  color: #c0c0c0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "Alice in Wonderland", sans-serif;
+  font-size: 32px;
+}
+.start-button {
+  width: 293px;
+  height: 78px;
+  background-color: #202122; /* Darker Blue */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: "Death Note Font", sans-serif;
+  font-size: 26px;
+  display: block;
+  margin: 0 auto;
+}
+.options-container button {
+  display: block;
+  margin: 0.5rem auto;
+  width: 95%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background-color: #dfdad3; /* Light Blue */
+  border-radius: 102px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: "Alice in Wonderland", sans-serif;
+  font-size: 22px;
+}
+.options-container button:hover {
+  background-color: rgb(212, 202, 187); /* Lighter Blue on hover */
+}
+.history-container {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  font-family: "Alice in Wonderland", sans-serif;
+  color: #c0c0c0;
+}
+.history-container h3 {
+  font-weight: 600;
+  color: #c0c0c0;
+  margin-bottom: 0.5rem;
+  font-size: 36px;
+}
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.history-list li {
+  font-size: 24px;
+  margin-bottom: 0.25rem;
+  color: #c0c0c0;
+}
+.history-list .question-history {
+  font-weight: 500;
+  color: #333;
+  color: #c0c0c0;
+  margin-left: 1rem;
+}
+.history-list .answer-history {
+  color: #555;
+  margin-left: 1.5rem;
+  color: #c0c0c0;
+}
+.result-container {
+  padding: 1.5rem;
+}
+.result-box {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-family: "Alice in Wonderland", sans-serif;
+  text-align: center;
+  color: #c0c0c0;
+}
+.result-box.success {
+  background-color: #161515;
+  border: 1px solid #161515;
+}
+.result-box.error {
+  background-color: #161515;
+  border: 1px solid #161515;
+}
+.result-box h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 32px;
+}
+.result-box p {
+  color: #c0c0c0;
+  font-size: 28px;
+}
+.result-details h3 {
+  font-weight: 600;
+  color: #c0c0c0;
+  margin-top: 1rem;
+  font-family: "Alice in Wonderland", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+.result-details p {
+  color: #c0c0c0;
+  margin-bottom: 0.5rem;
+  font-family: "Alice in Wonderland", sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+.toggle-details-button {
+  color: #202122;
+  background: #c0c0c0;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 auto 1rem auto;
+  display: block;
+  text-align: center;
+  font-family: "Alice in Wonderland", sans-serif;
+}
+.details-content {
+  background-color: #161515; /* Very Light Gray */
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 28px;
+  color: #c0c0c0;
+  font-family: "Alice in Wonderland", sans-serif;
+}
+
+
+/* Hero Section */
+.hero-section {
+  background-color: #e8e3dd;
+  color: #000;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.main-title {
+  font-family: "Cloister Black", serif;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: #051019;
+}
+
+.subtitle {
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.5rem;
+  color: #124329;
+}
+
+.start-button {
+  padding: 1rem 3rem;
+  width: 15rem;
+  background-color: #1c1c1c;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-family: "Death Note Font", serif;
+  font-size: 2rem;
+}
+
+/* Informational Tool Section */
+.info-intro {
+  background-color: #202122;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.info-heading {
+  font-family: "Cloister Black", serif;
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.info-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  font-family: "Kyiv*Type Titling", serif;
+  font-size: 2rem;
+}
+
+.info-item {
+  max-width: 300px;
+}
+
+.info-item img {
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.info-item h3 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Responsive row layout on wide screens */
+@media (min-width: 768px) {
+  .info-icons {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .act-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .act-left {
+    grid-template-rows: auto auto auto;
+  }
+
+  .act-button {
+    justify-self: center;
+  }
+
+  .act-image img {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .disclaimer-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .disclaimer-text h4 {
+    font-size: 1.5rem;
+  }
+
+  .disclaimer-text p4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* How To Use Section */
+.how-to {
+  background-color: #202122;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.how-to-heading {
+  font-family: "Alice in Wonderland", serif;
+  font-size: 8rem;
+  margin-bottom: 1.5rem;
+}
+
+.how-to-list {
+  list-style-position: inside;
+  font-family: "Alice in Wonderland", serif;
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.how-to-list li {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Republic Act Summary */
+.act-summary {
+  background-color: #202122;
+  color: #000;
+  padding: 2rem 1rem;
+}
+
+.act-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1272px;
+  margin: auto;
+  background-color: #dfdad3;
+  border-radius: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.act-left {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 1.5rem;
+}
+
+.act-title h3 {
+  font-size: 2.3em;
+  font-family: "Alice in Wonderland", serif;
+  margin-bottom: 0.25rem;
+}
+
+.act-title strong {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.abstract {
+  font-size: 1.4rem;
+  font-style: inter;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.learn-more {
+  padding: 0.5rem 1.5rem;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  font-family: "Alice in Wonderland", serif;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 200px; /* Custom width */
+  margin-top: 2rem;
+}
+
+.act-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.act-image img {
+  max-width: 250px;
+}
+
+/* Disclaimer */
+.disclaimer-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #dfdad3;
+  color: #000;
+  padding: 2rem;
+  margin: 2.4rem auto 80px;
+  border-radius: 2rem;
+  max-width: 1272px;
+  gap: 1rem;
+  align-items: center;
+}
+
+.disclaimer-text h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.disclaimer-text p4 {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.disclaimer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disclaimer-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
+/* Footer */
+.footer {
+  background-color: #dfdad3;
+  color: #000000;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer h2 {
+  font-family: "Cloister Black", serif;
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer p {
+  font-size: 2rem;
+  font-family: "Death Note Font", serif;
+}
